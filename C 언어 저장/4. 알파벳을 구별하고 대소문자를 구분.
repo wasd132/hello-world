@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void main()
+{
+	char arp;
+	printf("문자입력:");
+	scanf_s("%c", &arp);
+	if ('a' <= arp && 'z' >= arp)
+	{
+		printf("소문자 %c입니다.", arp);
+		printf("대문자는 %c입니다.", arp - 32);
+	}
+	else 
+	{
+		printf("대문자 %c입니다.", arp);
+		printf("소문자는 %c입니다.", arp + 32);
+	}
+}
