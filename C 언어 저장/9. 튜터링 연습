@@ -1,0 +1,82 @@
+#include <stdio.h>
+void main()
+{ 
+	int a;
+	printf("정수입력:");
+	scanf_s("%d", &a);
+	if (a < 0)
+	{
+		a=a*-1;
+	}
+	printf("값:%d", a);
+		
+	
+}
+
+//두개정수 외부입력 위치바꾸어 출력
+
+--------------------------------------------
+void main()
+{ 
+
+int a, b[5], avg, va;
+	for (int i=0; i < 5; i++)
+	{
+		printf("양의 정수 입력:");
+		scanf_s("%d", &a);
+		b[i] = a;
+	}
+		avg = b[0]+b[1] + b[2] + b[3] + b[4];
+	if(avg<51)
+	{
+		va = avg / 5;
+		printf("평균값은 %d", va);
+	}
+}
+
+//정수입력 평균값 구하기
+
+----------------------------------------------------
+#include <stdio.h>
+void main()
+{ 
+	int a,count=0;
+	printf("정수값입력:");
+	scanf_s("%d", &a);
+	for (int i = 2; i < a; i++)
+	{
+		if (a%i == 0)
+		{
+			count++;
+		}
+	}
+		if(count==1)
+		{ 
+			printf("정수입니다");
+		}
+		else
+		{
+			printf("소수입니다.");
+		}
+}
+
+//20이하의 양의정수 입력해서 소수정수 판별하기
+
+------------------------------------------------
+#include <stdio.h>
+void main()
+{ 
+	int a;
+		printf("정수를 입력하세요:");
+		scanf_s("%d", &a);
+		for (int i = 1; i <21; i++)
+		{
+			if (a%i == 0)
+			{
+				printf("%d, ", i);
+			}
+		}
+			
+}
+//20이하정수입력 약수구하기
+
