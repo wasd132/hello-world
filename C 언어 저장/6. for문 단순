@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+void main()
+{
+	int input = 0, b = 0;
+	printf("구구단 입력 프로그램\n");
+	printf("정수입력: ");
+	scanf_s("%d", &input);
+	for (int a = 1; a <= 9; a++)
+	{
+		printf("%dX%d=%d\n", input ,a , input *a);
+	}
+}
