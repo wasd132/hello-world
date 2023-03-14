@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+void main()
+{
+	int a=0;
+	printf("점수를 입력하시오:");
+	scanf_s("%d", &a);
+	
+	if (a >= 90)
+		printf("1등급\n");
+	else if (a >= 80)
+		printf("2등급\n");
+	else if (a >= 70)
+		printf("3등급\n");
+	else if (a >= 50)
+		printf("4등급\n");
+	else if (a >= 40)
+		printf("5등급\n");
+	else
+		printf("6등급\n");
+	printf("90이상:1등급,80-89:2등급\n70-79등급,50-69:4등급\n40-49:5등급,39이하:6등급");
+
+}
